@@ -6,8 +6,8 @@ const router = express.Router();
 const dotenv = require('dotenv');
 dotenv.config();
 // add your mongodb uri in the environment file.
-const uri = process.env.MONGODB_URI
-
+// const uri = process.env.MONGODB_URI
+const uri = 'mongodb+srv://xing123:uWgO7zPFUh4FHpsX@cluster0mongodb-yd4xn.mongodb.net/test?retryWrites=true&w=majority'
 // Get posts
 router.get('/', async (req, res) => {
     const posts = await loadPostsCollection();
